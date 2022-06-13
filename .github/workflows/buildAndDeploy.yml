@@ -18,7 +18,7 @@ jobs:
         Configuration: Release
         SolutionPath: JustMyCodeToggle.sln
         VsixManifestPath: Kazpers.JustMyCodeToggle\source.extension.vsixmanifest
-        VsixPath: Kazpers.JustMyCodeToggle\bin\Release\JustMyCodeToggle.vsix
+        VsixPath: Kazpers.JustMyCodeToggle\bin\Release\Kazpers.JustMyCodeToggle.vsix
 #        VsixPublishManifestPath: Tvl.VisualStudio.JustMyCodeToggle\publishManifest.json
     steps:
     - name: Checkout repository
