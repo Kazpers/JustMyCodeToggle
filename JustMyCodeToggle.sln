@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kazpers.JustMyCodeToggle", "Kazpers.JustMyCodeToggle\Kazpers.JustMyCodeToggle.csproj", "{FA24BE86-243C-4701-9316-542FEB90B131}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kazpers.JustMyCodeToggle", "Kazpers.JustMyCodeToggle\Kazpers.JustMyCodeToggle.csproj", "{B6A75089-1E29-4667-BA9F-D1976BF30FA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,17 +21,20 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FA24BE86-243C-4701-9316-542FEB90B131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA24BE86-243C-4701-9316-542FEB90B131}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA24BE86-243C-4701-9316-542FEB90B131}.Debug|x86.ActiveCfg = Debug|x86
-		{FA24BE86-243C-4701-9316-542FEB90B131}.Debug|x86.Build.0 = Debug|x86
-		{FA24BE86-243C-4701-9316-542FEB90B131}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA24BE86-243C-4701-9316-542FEB90B131}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FA24BE86-243C-4701-9316-542FEB90B131}.Release|x86.ActiveCfg = Release|x86
-		{FA24BE86-243C-4701-9316-542FEB90B131}.Release|x86.Build.0 = Release|x86
+		{B6A75089-1E29-4667-BA9F-D1976BF30FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A75089-1E29-4667-BA9F-D1976BF30FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A75089-1E29-4667-BA9F-D1976BF30FA8}.Debug|x86.ActiveCfg = Debug|x86
+		{B6A75089-1E29-4667-BA9F-D1976BF30FA8}.Debug|x86.Build.0 = Debug|x86
+		{B6A75089-1E29-4667-BA9F-D1976BF30FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A75089-1E29-4667-BA9F-D1976BF30FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6A75089-1E29-4667-BA9F-D1976BF30FA8}.Release|x86.ActiveCfg = Release|x86
+		{B6A75089-1E29-4667-BA9F-D1976BF30FA8}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B6A75089-1E29-4667-BA9F-D1976BF30FA8} = {05CB4485-3F59-4189-96D8-F046221EC9CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A4CDD95-3316-491E-8EC9-428E17C81D44}

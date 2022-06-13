@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Kazpers.JustMyCodeToggle.4004ce2e-1ba9-4a74-a64f-af2a45d10b94" Version="1.4.0" Language="en-US" Publisher="Kazpers" />
-        <DisplayName>Just My Code Toggle</DisplayName>
-        <Description xml:space="preserve">Adds the Just My Code command button to Visual Studio. Updated for VS2022. Original Work by Sam Harwell: https://github.com/tunnelvisionlabs/JustMyCodeToggle</Description>
+        <Identity Id="Kazpers.JustMyCodeToggle.362bcb7c-f989-43af-8900-f53664e49455" Version="1.4" Language="en-US" Publisher="Kasper Bergh" />
+        <DisplayName>JustMyCodeToggle</DisplayName>
+        <Description xml:space="preserve">This extension is inteded to make it easy to enable and disable Just My Code.
+Adds a menuitem to the debug menu, a button to the debug toolbar and a rightclick menuitem to the stack window.
+
+Based on https://github.com/tunnelvisionlabs/JustMyCodeToggle by Sam Harwell, but updated for VS 2022 and refactored.</Description>
         <MoreInfo>https://github.com/Kazpers/JustMyCodeToggle</MoreInfo>
         <License>LICENSE.txt</License>
-        <ReleaseNotes>https://github.com/Kazpers/JustMyCodeToggle/releases/latest</ReleaseNotes>
-        <Tags>debugging, just my code</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
