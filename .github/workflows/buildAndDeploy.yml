@@ -18,7 +18,7 @@ jobs:
         Configuration: Release
         SolutionPath: JustMyCodeToggle.sln
         VsixManifestPath: Tvl.VisualStudio.JustMyCodeToggle\source.extension.vsixmanifest
-        VsixPath: Tvl.VisualStudio.JustMyCodeToggle\bin\Release\net472\JustMyCodeToggle.vsix
+        VsixPath: bin\Release\net472\JustMyCodeToggle.vsix
 #        VsixPublishManifestPath: Tvl.VisualStudio.JustMyCodeToggle\publishManifest.json
     steps:
     - name: Checkout repository
