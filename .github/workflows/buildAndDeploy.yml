@@ -47,7 +47,7 @@ jobs:
       run: msbuild $env:SolutionPath /t:Rebuild
       env: 
         DeployExtension: False
-    - run: ls ${{ env.VsixPath }}
+    - run: ls Tvl.VisualStudio.JustMyCodeToggle\bin\Release\net472
     - name: Test extension
       run: dotnet test --no-build --verbosity normal $env:SolutionPath
     - name: Generate release note
