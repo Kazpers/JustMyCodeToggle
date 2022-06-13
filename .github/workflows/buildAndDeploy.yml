@@ -23,15 +23,15 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2   
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '3.1.x'
+#    - name: Setup .NET Core
+#      uses: actions/setup-dotnet@v1
+#      with:
+#        dotnet-version: '3.1.x'
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v1.0.2
       id: MsBuildSetup
-    - name: Restore NuGet Packages
-      run: nuget restore $env:SolutionPath
+#    - name: Restore NuGet Packages
+#      run: nuget restore $env:SolutionPath
     - name: Calculate next version
       uses: cezarypiatek/NextVersionGeneratorAction@0.4
       with:
