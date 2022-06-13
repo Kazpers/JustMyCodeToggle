@@ -1,4 +1,4 @@
-# Just My Code Toggle extension for Visual Studio 2015+
+# Just My Code Toggle extension for Visual Studio 2022+
 
 [![Build status](https://ci.appveyor.com/api/projects/status/dnxhxa3chg1dtpnt/branch/master?svg=true)](https://ci.appveyor.com/project/sharwell/justmycodetoggle/branch/master)
 
@@ -15,3 +15,5 @@ This extension adds the **Debug.JustMyCodeToggle** command to Visual Studio. By 
 ### Keyboard
 
 By default, the new command is not bound to a keystroke. A key binding may be added manually by configuring a binding for the **Debug.JustMyCodeToggle** command.
+
+Original Work by Sam Harwell: https://github.com/tunnelvisionlabs/JustMyCodeToggle

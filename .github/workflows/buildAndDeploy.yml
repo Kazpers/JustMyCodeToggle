@@ -17,8 +17,8 @@ jobs:
         SourceRevisionId: '${{ github.sha }}'
         Configuration: Release
         SolutionPath: JustMyCodeToggle.sln
-        VsixManifestPath: Tvl.VisualStudio.JustMyCodeToggle\source.extension.vsixmanifest
-        VsixPath: Tvl.VisualStudio.JustMyCodeToggle\bin\Release\net472\JustMyCodeToggle.vsix
+        VsixManifestPath: Kazpers.JustMyCodeToggle\source.extension.vsixmanifest
+        VsixPath: Kazpers.JustMyCodeToggle\bin\Release\JustMyCodeToggle.vsix
 #        VsixPublishManifestPath: Tvl.VisualStudio.JustMyCodeToggle\publishManifest.json
     steps:
     - name: Checkout repository
@@ -47,7 +47,6 @@ jobs:
       run: msbuild $env:SolutionPath /t:Rebuild
       env: 
         DeployExtension: False
-    - run: ls Tvl.VisualStudio.JustMyCodeToggle\bin\Release\net472
     - name: Test extension
       run: dotnet test --no-build --verbosity normal $env:SolutionPath
     - name: Generate release note
@@ -55,26 +54,26 @@ jobs:
         git fetch --prune --unshallow
         $commitLog = git log "$(git describe --tags --abbrev=0)..HEAD" --pretty=format:"- %s"
         "What's new: `r`n`r`n$([string]::Join("`r`n",$commitLog))" | Out-File release_note.md -Encoding utf8
-#    - name: Create Github Release
-#      id: create_release
-#      uses: actions/create-release@v1
-#      env:
-#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#      with:
-#        tag_name: ${{ env.Version }}
-#        release_name:  ${{ env.Version }}
-#        body_path: release_note.md
-#        draft: false
-#        prerelease: false
-#    - name: Upload Release Asset - VSIX
-#     uses: actions/upload-release-asset@v1
-#      env:
-#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#      with:
-#        upload_url: ${{ steps.create_release.outputs.upload_url }}
-#        asset_path: ${{ env.VsixPath }}
-#        asset_name: JustMyCodeToggle.vsix
-#        asset_content_type: binary/octet-stream
+    - name: Create Github Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ env.Version }}
+        release_name:  ${{ env.Version }}
+        body_path: release_note.md
+        draft: false
+        prerelease: false
+    - name: Upload Release Asset - VSIX
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ${{ env.VsixPath }}
+        asset_name: JustMyCodeToggle.vsix
+        asset_content_type: binary/octet-stream
 #    - name: Upload Release Asset - Nuget
 #      uses: actions/upload-release-asset@v1
 #      env:
