@@ -18,7 +18,7 @@ jobs:
         Configuration: Release
         SolutionPath: JustMyCodeToggle.sln
         VsixManifestPath: Tvl.VisualStudio.JustMyCodeToggle\source.extension.vsixmanifest
-        VsixPath: Tvl.VisualStudio.JustMyCodeToggle\bin\Release\MappingGenerator.vsix
+        VsixPath: Tvl.VisualStudio.JustMyCodeToggle\bin\Release\JustMyCodeToggle.vsix
 #        VsixPublishManifestPath: Tvl.VisualStudio.JustMyCodeToggle\publishManifest.json
     steps:
     - name: Checkout repository
@@ -65,15 +65,15 @@ jobs:
         body_path: release_note.md
         draft: false
         prerelease: false
-#    - name: Upload Release Asset - VSIX
-#      uses: actions/upload-release-asset@v1
-#      env:
-#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#      with:
-#        upload_url: ${{ steps.create_release.outputs.upload_url }}
-#        asset_path: ${{ env.VsixPath }}
-#        asset_name: MappingGenerator.vsix
-#        asset_content_type: binary/octet-stream
+    - name: Upload Release Asset - VSIX
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ${{ env.VsixPath }}
+        asset_name: JustMyCodeToggle.vsix
+        asset_content_type: binary/octet-stream
 #    - name: Upload Release Asset - Nuget
 #      uses: actions/upload-release-asset@v1
 #      env:
