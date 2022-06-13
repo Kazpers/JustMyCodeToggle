@@ -3,7 +3,7 @@
   <Import Sdk="Microsoft.NET.Sdk" Project="Sdk.props" />
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net45</TargetFramework>
 
     <Description>Adds the Just My Code command button to Visual Studio.</Description>
     <Company>Tunnel Vision Laboratories, LLC</Company>
