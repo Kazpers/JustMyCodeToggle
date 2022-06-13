@@ -1,7 +1,7 @@
 The MIT License (MIT)
 
 Copyright (c) 2017 Tunnel Vision Laboratories, LLC
-Further Copyright (c) 2022 Kasper Bergh
+Portions Copyright (c) 2022 Kasper Bergh
 
 All rights reserved.
 
